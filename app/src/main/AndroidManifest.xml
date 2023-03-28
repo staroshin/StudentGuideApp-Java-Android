@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ewubd.guide">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Guide">
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Parent_Portal"
+            android:exported="false" />
+        <activity
+            android:name=".Homework"
+            android:exported="false" />
+        <activity
+            android:name=".Teacher_Portal"
+            android:exported="false" />
+        <activity
+            android:name=".AssignHomework"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateHomework"
+            android:exported="false" />
+        <activity
+            android:name=".Submit_grade"
+            android:exported="false" />
+        <activity
+            android:name=".GradeReport"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Type"
+            android:exported="false" />
+        <activity
+            android:name=".FeesDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateFees"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateSalary"
+            android:exported="false" />
+        <activity
+            android:name=".SalaryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".NoticeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".NoticeDetailsParent"
+            android:exported="false" />
+        <activity
+            android:name=".SubmitNotice"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

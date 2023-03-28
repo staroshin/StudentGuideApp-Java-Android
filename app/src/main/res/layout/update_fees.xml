@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#92A0AD">
+    <ImageView
+
+        android:id="@+id/img9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/b"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Update Fees"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/stdsid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Student ID : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/s_sid2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/stdsid"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/m1"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/stdsid"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="January : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/s_sid2"
+            android:layout_toRightOf="@+id/m1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m2"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="February : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m1"
+            android:layout_toRightOf="@+id/m2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m3"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="March : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m2"
+            android:layout_toRightOf="@+id/m3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m4"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m3"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="April : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m3"
+            android:layout_toRightOf="@+id/m4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m5"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m4"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="May : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m4"
+            android:layout_toRightOf="@+id/m5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m6"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m5"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="June : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m5"
+            android:layout_toRightOf="@+id/m6"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m7"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m6"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="July : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m6"
+            android:layout_toRightOf="@+id/m7"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m8"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m7"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="August : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m7"
+            android:layout_toRightOf="@+id/m8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m9"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m8"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="September : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m8"
+            android:layout_toRightOf="@+id/m9"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m10"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m9"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="October : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m9"
+            android:layout_toRightOf="@+id/m10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m11"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m10"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="November : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m10"
+            android:layout_toRightOf="@+id/m11"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/m12"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/m11"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:text="December : "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/m11"
+            android:layout_toRightOf="@+id/m12"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/paid12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/pending12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sub_fees"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
+
+        android:text="Submit"
+        android:textColor="#92A0AD"
+        android:textSize="22dp">
+
+    </Button>
+
+
+</RelativeLayout>

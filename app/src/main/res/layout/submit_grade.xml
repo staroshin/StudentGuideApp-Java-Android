@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#92A0AD">
+    <ImageView
+
+        android:id="@+id/img21"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/b"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Submit Grade"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/sid"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Student ID : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/grade1"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/sid"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Half Yearly Grade : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/grade2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/grade1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Annual Grade : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/s_sid"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:layout_toRightOf="@id/sid"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/s_grade1"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/s_sid"
+            android:layout_toRightOf="@id/grade1"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/s_grade2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/s_grade1"
+            android:layout_toRightOf="@id/grade1"
+            android:gravity="center" />
+
+
+        <Button
+            android:id="@+id/sub_grade"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/grade2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/white"
+
+            android:text="Submit"
+            android:textColor="#92A0AD"
+            android:textSize="22dp">
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

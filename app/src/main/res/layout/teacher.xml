@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#92A0AD">
+    <ImageView
+
+        android:id="@+id/img2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/b"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Teacher Portal"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_hwi"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Assign Homework"
+            android:textColor="#92A0AD"
+            android:textSize="20dp"></Button>
+        <Button
+            android:id="@+id/view_hw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+android:layout_below="@id/btn_hwi"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="View Homework List"
+            android:textColor="#92A0AD"
+            android:textSize="20dp"></Button>
+
+
+        <Button
+            android:id="@+id/v_salary"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+
+            android:layout_below="@+id/view_hw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/white"
+            android:text="salary"
+            android:textColor="#92A0AD"
+
+            android:textSize="20dp">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/sub_grade"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+
+            android:layout_below="@id/v_salary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Submit Grade"
+
+            android:textColor="#92A0AD"
+            android:textSize="20dp"></Button>
+
+        <Button
+            android:id="@+id/get_tnotice"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+
+            android:layout_below="@id/sub_grade"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Notice"
+
+            android:textColor="#92A0AD"
+            android:textSize="20dp"></Button>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

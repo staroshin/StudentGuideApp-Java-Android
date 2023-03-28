@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#92A0AD">
+
+
+
+
+    <ImageView
+
+android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/b"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+       />
+
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Student Guide"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:layout_below="@id/caption">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Username : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/e_name"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/name"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/pw"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Password : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/e_pw"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/e_name"
+            android:layout_toRightOf="@id/pw"
+            android:gravity="center"
+            android:inputType="textPassword"/>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/white"
+
+            android:text="Login"
+            android:textColor="#4c5762"
+            android:textSize="22dp">
+
+        </Button>
+
+        <TextView
+
+            android:id="@+id/acc_msg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_toLeftOf="@id/btnSignup"
+            android:gravity="center_vertical"
+            android:text="Don't have an account?"
+            android:textColor="#3D3D3D"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnLogin"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#92A0AD"
+
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+
+            android:id="@+id/developerName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/acc_msg"
+
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Developed By\nOshin Nusrat Rahman"
+            android:textColor="#E5E4E2"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

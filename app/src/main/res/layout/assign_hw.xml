@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#92A0AD">
+    <ImageView
+
+        android:id="@+id/img11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/b"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Assign Homework"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="1">
+
+
+
+
+
+        <TextView
+            android:id="@+id/hw_title"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Title : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/dl"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/hw_title"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:text="Deadline : "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/e_title"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:layout_toRightOf="@id/hw_title"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/e_dl"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/e_title"
+            android:layout_toRightOf="@id/dl"
+            android:gravity="center" />
+
+
+        <Button
+            android:id="@+id/sub_hw"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/dl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/white"
+
+            android:text="Submit"
+            android:textColor="#92A0AD"
+            android:textSize="22dp">
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
